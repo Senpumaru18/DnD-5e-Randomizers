@@ -1,4 +1,4 @@
-from string import ascii_letters
+from string import ascii_letters #It worked
 from random import randint, choice, choices
 
 # DICE ROLLS USED FOR THE GENERATORS (yes i understand i could have just used the 'XdX' dice roller for the whole thing.)
