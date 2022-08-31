@@ -452,113 +452,61 @@ def Figurine_of_Wondrous_power(Number_of_Items=1):
 # SPELL SCROLLS
 def Cantrip_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Acid Splash", "Blade Ward", "Chill Touch", "Dancing Lights", "Druidcraft", "Eldritch Blast", "Fire Bolt",
-                  "Friends", "Guidance", "Light", "Mage Hand", "Mending", "Message", "Minor Illusion", "Poison Spray",
-                  "Prestidigitaion", "Produce Flame", "Ray of Frost", "Resistance", "Sacred Flame", "Shillelagh", "Shocking Grasp",
-                  "Spare the Dying", "Thaumaturgy", "Thorn Whip", "True Strike", "Vicious Mockery"]
+    Spell_List = ["Acid Splash","Blade Ward","Booming Blade","Chill Touch","Control Flames","Create Bonfire","Dancing Lights","Decompose","Druidcraft","Eldritch Blast","Encode Thoughts","Fire Bolt","Friends","Frostbite","Green-Flame Blade","Guidance","Gust","Hand of Radiance","Infestation","Light","Lightning Lure","Mage Hand","Magic Stone","Mending","Message","Mind Sliver","Minor Illusion","Mold Earth","Poison Spray","Prestidigitation","Primal Savagery","Produce Flame","Ray of Frost","Resistance","Sacred Flame","Sapping Sting","Shape Water","Shillelagh","Shocking Grasp","Spare the Dying","Sword Burst","Thaumaturgy","Thron Whip","Thunderclap","Toll the Dead","True Strike","Vicious Mockery","Word of Radiance"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result
 def Level_1_Spell_Scroll(Number_of_Itmes=1):
     result = []
-    Spell_List = ["Alarm (Ritual)", "Animal Friendship", "Armor of Agathys", "Bane", "Bless", "Burning Hands", "Charm Person",
-                  "Chromatic Orb", "Color Spray", "Command", "Compelled Duel", "Comprehend Languages (Ritual)", "Create or Destroy Water",
-                  "Cure Wounds", "Detect Evil and Good", "Detect Magic (Ritual)", "Detect Poison and Disease (Ritual)",
-                  "Disguise Self", "Dissonant Whispers", "Divine Favor", "Ensnaring Strike", "Entangle", "Expeditious Retreat",
-                  "Faerie Fire", "False Life", "Feather Fall", "Find Familiar (Ritual)", "Fog Cloud", "Goodberry", "Grease",
-                  "Guiding Bolt", "Hail of Thorns", "Healing Word", "Hellish Rebuke", "Heroism", "Hex", "Hunter's Mark",
-                  "Identify (Ritual)", "Illusory Script (Ritual)", "Jump", "Longstrider", "Mage Armor", "Magic Missle",
-                  "Protection from Evil and Good", "Purify Food and Drink (Ritual)", "Ray of Sickness", "Sanctuary",
-                  "Searing Smite", "Shield", "Silent Image", "Sleep", "Speak with Animals (Ritual)", "Tasha's Hideous Laughter",
-                  "Tenser's Floating Disk (Ritual)", "Thunderous Smite", "Thunderwave", "Unseen Servant (Ritual)", "Witch Bolt"
-                  "Wrathful Smite"]
+    Spell_List = ["Alarm (Ritual)", "Animal Friendship", "Armor of Agathys", "Bane", "Bless", "Burning Hands", "Charm Person","Chromatic Orb", "Color Spray", "Command", "Compelled Duel", "Comprehend Languages (Ritual)", "Create or Destroy Water","Cure Wounds", "Detect Evil and Good", "Detect Magic (Ritual)", "Detect Poison and Disease (Ritual)","Disguise Self", "Dissonant Whispers", "Divine Favor", "Ensnaring Strike", "Entangle", "Expeditious Retreat","Faerie Fire", "False Life", "Feather Fall", "Find Familiar (Ritual)", "Fog Cloud", "Goodberry", "Grease","Guiding Bolt", "Hail of Thorns", "Healing Word", "Hellish Rebuke", "Heroism", "Hex", "Hunter's Mark","Identify (Ritual)", "Illusory Script (Ritual)", "Jump", "Longstrider", "Mage Armor", "Magic Missle","Protection from Evil and Good","Purify Food and Drink (Ritual)", "Ray of Sickness", "Sanctuary","Searing Smite", "Shield", "Silent Image", "Sleep","Speak with Animals (Ritual)","Tasha's Hideous Laughter","Tenser's Floating Disk (Ritual)", "Thunderous Smite", "Thunderwave", "Unseen Servant (Ritual)", "Witch Bolt","Wrathful Smite"]
     for i in range(Number_of_Itmes):
         result.append(choice(Spell_List))
     return result
 def Level_2_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Aid", "Alter Self", "Animal Messenger (Ritual)", "Arcane Lock", "Augury (Ritual)", "Barkskin", "Beast Sense (Ritual)", "Blindness/Deafness",
-                  "Blur", "Branding Smite", "Calm Emotions", "Cloud of Daggers", "Continual Flame", "Cordon of Arrows",
-                  "Crown of Madness", "Darkness", "Darkvision", "Detect Thoughts", "Enchance Ability", "Enlarge/Reduce",
-                  "Enthrall", "Find Steed", "Find Traps", "Flame Blade", "Flaming Sphere", "Gentle Repose (Ritual)",
-                  "Gust of Wind", "Heat Metal", "Hold Person", "Invisiblity", "Knock", "Lesser Restoration", "Levitate",
-                  "Locate Animals or Plants (Ritual)", "Locate Object", "Magic Mouth (Ritual)", "Magic Weapon", "Melf's Acid Arrow",
-                  "Mirror Image", "Misty Step", "Moonbeam", "Nystul's Magic Aura", "Pass Without Trace", "Phantasmal Force",
-                  "Prayer of Healing", "Protection from Poison", "Ray of Enfeeblement", "Rope Trick", "Scorching Ray",
-                  "See Invisibility", "Shatter", "Silence (Ritual)", "Spider Climb", "Spike Growth", "Spiritiual Weapon",
-                  "Suggestion", "Warding Bond", "Web", "Zone of Truth"]
+    Spell_List = ["Aid", "Alter Self", "Animal Messenger (Ritual)", "Arcane Lock", "Augury (Ritual)", "Barkskin", "Beast Sense (Ritual)", "Blindness/Deafness","Blur", "Branding Smite", "Calm Emotions", "Cloud of Daggers", "Continual Flame", "Cordon of Arrows","Crown of Madness", "Darkness", "Darkvision", "Detect Thoughts", "Enchance Ability", "Enlarge/Reduce","Enthrall", "Find Steed", "Find Traps", "Flame Blade", "Flaming Sphere", "Gentle Repose (Ritual)","Gust of Wind", "Heat Metal", "Hold Person", "Invisiblity", "Knock", "Lesser Restoration", "Levitate","Locate Animals or Plants (Ritual)", "Locate Object", "Magic Mouth (Ritual)", "Magic Weapon", "Melf's Acid Arrow","Mirror Image", "Misty Step", "Moonbeam", "Nystul's Magic Aura", "Pass Without Trace", "Phantasmal Force","Prayer of Healing", "Protection from Poison", "Ray of Enfeeblement", "Rope Trick", "Scorching Ray","See Invisibility", "Shatter", "Silence (Ritual)", "Spider Climb", "Spike Growth", "Spiritiual Weapon","Suggestion", "Warding Bond", "Web", "Zone of Truth"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result
 def Level_3_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Animate Dead", "Arua of Vitality", "Beacon of Hope", "Bestow Curse", "Blinding Smite", "Blink"
-                  "Call Lightning", "Clairvoyance", "Conjure Animals", "Conjure Barrage", "Counterspell", "Create Food and Water",
-                  "Crusader's Mantle", "Daylight", "Dispel Magic", "Elemental Weapon", "Fear", "Feign Death (Ritual)", "Fireball",
-                  "Fly", "Gaseous Form", "Glyph of Warding", "Haste", "Hunger of Hadar", "Hypnotic Pattern", "Leomund's Tiny Hut (Ritual)",
-                  "Lightning Arrow", "Mage Circle", "Major Image", "Mass Healing Word", "Meld into Stone (Ritual)", "Plant Growth",
-                  "Protection from Energy", "Romve Curse", "Revivify", "Sending", "Sleet Storm", "Slow", "Speak with Dead",
-                  "Speak with Plants", "Spirit Guardians", "Stinking Cloud", "Tongues", "Vampiric Touch", "Water Breathing (Ritual)",
-                  "Water Walk (Ritual)", "Wind Wall"]
+    Spell_List = ["Animate Dead", "Arua of Vitality", "Beacon of Hope", "Bestow Curse", "Blinding Smite", "Blink""Call Lightning", "Clairvoyance", "Conjure Animals", "Conjure Barrage", "Counterspell", "Create Food and Water","Crusader's Mantle", "Daylight", "Dispel Magic", "Elemental Weapon", "Fear", "Feign Death (Ritual)", "Fireball","Fly", "Gaseous Form", "Glyph of Warding", "Haste", "Hunger of Hadar", "Hypnotic Pattern", "Leomund's Tiny Hut (Ritual)","Lightning Arrow", "Mage Circle", "Major Image", "Mass Healing Word", "Meld into Stone (Ritual)", "Plant Growth","Protection from Energy", "Romve Curse", "Revivify", "Sending", "Sleet Storm", "Slow", "Speak with Dead","Speak with Plants", "Spirit Guardians", "Stinking Cloud", "Tongues", "Vampiric Touch", "Water Breathing (Ritual)","Water Walk (Ritual)", "Wind Wall"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result
 def Level_4_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Arcane Eye", "Aura of Life", "Aura of Purity", "Banishment", "Blight", "Compulsion", "Confusion",
-                  "Conjure Minor Elementals", "Conjure Woodland Beings", "Control Water", "Death Ward", "Dimension Door",
-                  "Divination (Ritual)", "Dominate Beast", "Evard's Black Tentacles", "Fabricate", "Fire Shield", "Freedom of Movement",
-                  "Giant Insect", "Grasping Vine", "Greater Invisibility", "Guardian of Faith", "Hallucinatory Terrain", "Ice Storm",
-                  "Leomund's Secret Chest", "Locate Creature", "Mordenkainen's Faithful Hound", "Mordenkainen's Private Sanctum",
-                  "Otiluke's Resilient Sphere", "Phantasmal Killer", "Polymorph", "Staggering Smite", "Stone Shape", "Stoneskin", "Wall of Fire"]
+    Spell_List = ["Arcane Eye", "Aura of Life", "Aura of Purity", "Banishment", "Blight", "Compulsion", "Confusion","Conjure Minor Elementals", "Conjure Woodland Beings", "Control Water", "Death Ward", "Dimension Door","Divination (Ritual)", "Dominate Beast", "Evard's Black Tentacles", "Fabricate", "Fire Shield", "Freedom of Movement","Giant Insect", "Grasping Vine", "Greater Invisibility", "Guardian of Faith", "Hallucinatory Terrain", "Ice Storm","Leomund's Secret Chest", "Locate Creature", "Mordenkainen's Faithful Hound", "Mordenkainen's Private Sanctum","Otiluke's Resilient Sphere", "Phantasmal Killer", "Polymorph", "Staggering Smite", "Stone Shape", "Stoneskin", "Wall of Fire"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result
 def Level_5_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Animate Objects", "Antlife Shell", "Awaken", "Banishing Smite", "Bigby's Hand", "Circle of Power", "Cloudkill",
-                  "Commune (Ritual)", "Commune with Nature (Ritual)", "Cone of Cold", "Conjure Elemental", "Conjure Volley",
-                  "Contact Other Plane (Ritual)", "Contagion", "Creation", "Destructive Wave", "Dispel Evil and Good", "Dominate Person",
-                  "Dream", "Flame Strike", "Geas", "Greater Restoration", "Hallow", "Hold Monster", "Insect Plague", "Legend Lore",
-                  "Mass Cure Wounds", "Mislead", "Modify Memory", "Passwall", "Planar Binding", "Raise Dead", "Rary's Telepathic Bond (Ritual)",
-                  "Reincarnate", "Scrying" , "Seeming", "Swift Quiver", "Telekinesis", "Teleportation Circle", "Tree Stride",
-                  "Wall of Force", "Wall of Stone"]
+    Spell_List = ["Animate Objects", "Antlife Shell", "Awaken", "Banishing Smite", "Bigby's Hand", "Circle of Power", "Cloudkill","Commune (Ritual)", "Commune with Nature (Ritual)", "Cone of Cold", "Conjure Elemental", "Conjure Volley","Contact Other Plane (Ritual)", "Contagion", "Creation", "Destructive Wave", "Dispel Evil and Good", "Dominate Person","Dream", "Flame Strike", "Geas", "Greater Restoration", "Hallow", "Hold Monster", "Insect Plague", "Legend Lore","Mass Cure Wounds", "Mislead", "Modify Memory", "Passwall", "Planar Binding", "Raise Dead", "Rary's Telepathic Bond (Ritual)","Reincarnate", "Scrying" , "Seeming", "Swift Quiver", "Telekinesis", "Teleportation Circle", "Tree Stride","Wall of Force", "Wall of Stone"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result
 def Level_6_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Arcane Gate", "Blade Barrier", "Chain Lightning", "Circle of Death", "Conjure Fey", "Contingency", "Create Undead",
-                  "Disintergrate", "Drawmij's instant Summons (Ritual)", "Eyebite", "Find the Path", "Flesh to Stone",
-                  "Forbiddance (Ritual)", "Glob of invulnerability", "Guards and Wards", "Harm", "Heal", "Heroes' Feast",
-                  "Magic Jar", "Mass Suggestion", "Move Earth", "Otiluke's Freezing Sphere", "Otto's Irresistible Dance", "Planar Ally",
-                  "Programmed Illusion", "Sundbeam", "Transport via Plants", "True Seeing", "Wall of Ice", "Wall of Thorns",
-                  "Wind Walk", "Word of Recall"]
+    Spell_List = ["Arcane Gate", "Blade Barrier", "Chain Lightning", "Circle of Death", "Conjure Fey", "Contingency", "Create Undead","Disintergrate", "Drawmij's instant Summons (Ritual)", "Eyebite", "Find the Path", "Flesh to Stone","Forbiddance (Ritual)", "Glob of invulnerability", "Guards and Wards", "Harm", "Heal", "Heroes' Feast","Magic Jar", "Mass Suggestion", "Move Earth", "Otiluke's Freezing Sphere", "Otto's Irresistible Dance", "Planar Ally","Programmed Illusion", "Sundbeam", "Transport via Plants", "True Seeing", "Wall of Ice", "Wall of Thorns","Wind Walk", "Word of Recall"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result
 def Level_7_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Conjure Celestial", "Delayed Blast Fireball", "Divine Word", "Etherealness", "Finger of Death", "Fire Storm",
-                  "Forcecage", "Mirage Arcane", "Mordenkainen's Magnificent Mansion", "Mordenkainen's Sword", "Plane Shift",
-                  "Prismatic Spray", "Project Image", "Regenerate", "Resurrection", "Reverse Gravity", "Sequester",
-                  "Simulacrum", "Symbol", "Teleport"]
+    Spell_List = ["Conjure Celestial", "Delayed Blast Fireball", "Divine Word", "Etherealness", "Finger of Death", "Fire Storm","Forcecage", "Mirage Arcane", "Mordenkainen's Magnificent Mansion", "Mordenkainen's Sword", "Plane Shift","Prismatic Spray", "Project Image", "Regenerate", "Resurrection", "Reverse Gravity", "Sequester","Simulacrum", "Symbol", "Teleport"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result
 def Level_8_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Animal Shapes", "Antimagic Field", "Antipathy/Sympathy", "Clone", "Control Weather", "Demiplane", "Dominate Monster",
-                  "Earthquake", "Feeblemind", "Glibness", "Holy Aura", "Incendiary Cloud", "Maze", "Mind Blank", "Power Word Stun",
-                  "Sunburst", "Telepathy", "Trap the Soul", "Tsunami"]
+    Spell_List = ["Animal Shapes", "Antimagic Field", "Antipathy/Sympathy", "Clone", "Control Weather", "Demiplane", "Dominate Monster","Earthquake", "Feeblemind", "Glibness", "Holy Aura", "Incendiary Cloud", "Maze", "Mind Blank", "Power Word Stun","Sunburst", "Telepathy", "Trap the Soul", "Tsunami"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result
 def Level_9_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Astral Projection", "Foresight", "Gate", "Imprisonment", "Mass Heal", "Meteor Swarm", "Power Word Heal",
-                  "Power Word Kill", "Prismatic Wall", "Shapechange", "Storm of Vengance", "Time Stop", "True Polymorph",
-                  "True Resurrection", "Weird", "Wish"]
+    Spell_List = ["Astral Projection", "Foresight", "Gate", "Imprisonment", "Mass Heal", "Meteor Swarm", "Power Word Heal","Power Word Kill", "Prismatic Wall", "Shapechange", "Storm of Vengance", "Time Stop", "True Polymorph","True Resurrection", "Weird", "Wish"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result
