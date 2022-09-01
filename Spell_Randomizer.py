@@ -19,49 +19,49 @@ def Second_Level(Num=1): # Num = number of spells to pick
     print(second)
 def Third_Level(Num=1): # Num = number of spells to pick
     third = [] # empty list to add selected spells to
-    list = [""]
+    list = ["Animate Dead","Ashardalon's Stride","Aura of Vitality","Beacon of Hope","Bestow Curse","Binding Smite",]
     for i in range(Num):
         third.append(choice(list))
     print(third)
 def Fourth_Level(Num=1): # Num = number of spells to pick
     fourth = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         fourth.append(choice(list))
     print(fourth)
 def Fifth_Level(Num=1): # Num = number of spells to pick
     fifth = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         fifth.append(choice(list))
     print(fifth)
 def Sixth_Level(Num=1): # Num = number of spells to pick
     sixth = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         sixth.append(choice(list))
     print(sixth)
 def Seventh_Level(Num=1): # Num = number of spells to pick
     seventh = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         seventh.append(choice(list))
     print(seventh)
 def Eighth_Level(Num=1): # Num = number of spells to pick
     eighth = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         eighth.append(choice(list))
     print(eighth)
 def Ninth_Level(Num=1): # Num = number of spells to pick
     ninth = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         ninth.append(choice(list))
     print(ninth)
 def All_Spells(Num=1): # Num = number of spells to pick
     all = [] # empty list to add selected spells to
-    list = ["d","D"]
+    list = []
     for i in range(Num):
         all.append(choice(list))
     print(all)
