@@ -19,7 +19,7 @@ def Second_Level(Num=1): # Num = number of spells to pick
     print(second)
 def Third_Level(Num=1): # Num = number of spells to pick
     third = [] # empty list to add selected spells to
-    list = ["Animate Dead","Ashardalon's Stride","Aura of Vitality","Beacon of Hope","Bestow Curse","Binding Smite",]
+    list = ["Animate Dead","Ashardalon's Stride","Aura of Vitality","Beacon of Hope","Bestow Curse","Binding Smite","Blink","Call Lightning","Catnap","Clairvoyance","Conjure Animals","Conjure Barrage","Conjure Lesser Demon","Counterspell","Create Food and Water","Crusader's Mantle","Daylight","Dispel Magic","Elemental Weapon","Enemies Abound","Erupting Earth","Fast Friends","Fear","Feign Death","Fireball","Flame Arrows","Fly","Galder's Tower","Gaseous Form","Glyph of Warding","Haste","Hunger of Hadar","Hypnotic Pattern","Incite Greed","Intellect Fortress","Leomund's Tiny Hut","Life Transference","Lightning Arrow","Lightning Bolt","Magic Circle","Major Image","Mass Healing Word","Meld into Stone","Melf's Minute Meteors","Motivational Speech","Nondetection","Phantom Steed","Plant Growth","Protection from Energy","Pulse Wave","Remove Curse","Revivify","Sending","Sleet Storm","Slow","Speak with Dead","Speak with Plants","Spirit Guardians","Spirit Shroud","Stinking Cloud","Summon Fey","Summon Lesser Deoms","Summon Shadowspawn","Summon Undead","Thunder Step","Tidal Wave","Tiny Servant","Tongues","Vampiric Touch","Wall of Sand","Wall of Water","Water Breathing","Water Walk","Wind Wall"]
     for i in range(Num):
         third.append(choice(list))
     print(third)
