@@ -327,84 +327,10 @@ def Random_Art_Objects_7500GP(number_of_art_objects=1):
 # EXTRAS GENERATORS 
 def Random_Weapon(number_of_weapons=1):   # These are from the table in the Player's Handbook on pg. 149
     result = []
+    weapons = ["Club","Dagger","Greatlub","Handaxe","Javelin","Light Hammer","Mace","Quarterstaff","Sickle","Spear","Dart","Shortbow","Sling","Battleaxe","Flail","Glaive","Greataxe","Greatsword","Halberd","Lance","Longsword","Maul","Morningstar","Pike","Rapier","Scimitar","Shortsword","Trident","War pick","Warhammer","Whip","Whip","Blowgun","Hand crossbow","Heavy crossbow","Longbow","Net"]
+    modifier = ["","+1","+2","+3"]
     for i in range(number_of_weapons):
-        Dice_roll = XdX(1, 37)
-        if Dice_roll <= 1:
-            result.append("Club")
-        elif 2 <= Dice_roll <= 2:
-            result.append("Dagger")
-        elif 3 <= Dice_roll <= 3:
-            result.append("Greatlub")
-        elif 4 <= Dice_roll <= 4:
-            result.append("Handaxe")
-        elif 5 <= Dice_roll <= 5:
-            result.append("Javelin")
-        elif 6 <= Dice_roll <= 6:
-            result.append("Light Hammer")
-        elif 7 <= Dice_roll <= 7:
-            result.append("Mace")
-        elif 8 <= Dice_roll <= 8:
-            result.append("Quarterstaff")
-        elif 9 <= Dice_roll <= 9:
-            result.append("Sickle")
-        elif 10 <= Dice_roll <= 10:
-            result.append("Spear")
-        elif 11 <= Dice_roll <= 11:
-            result.append("Dart")
-        elif 12 <= Dice_roll <= 12:
-            result.append("Shortbow")
-        elif 13 <= Dice_roll <= 13:
-            result.append("Sling")
-        elif 14 <= Dice_roll <= 14:
-            result.append("Battleaxe")
-        elif 15 <= Dice_roll <= 15:
-            result.append("Flail")
-        elif 16 <= Dice_roll <= 16:
-            result.append("Glaive")
-        elif 17 <= Dice_roll <= 17:
-            result.append("Greataxe")
-        elif 18 <= Dice_roll <= 18:
-            result.append("Greatsword")
-        elif 19 <= Dice_roll <= 19:
-            result.append("Halberd")
-        elif 20 <= Dice_roll <= 20:
-            result.append("Lance")
-        elif 21 <= Dice_roll <= 21:
-            result.append("Longsword")
-        elif 22 <= Dice_roll <= 22:
-            result.append("Maul")
-        elif 23 <= Dice_roll <= 23:
-            result.append("Morningstar")
-        elif 24 <= Dice_roll <= 24:
-            result.append("Pike")
-        elif 25 <= Dice_roll <= 25:
-            result.append("Rapier")
-        elif 26 <= Dice_roll <= 26:
-            result.append("Scimitar")
-        elif 27 <= Dice_roll <= 27:
-            result.append("Shortsword")
-        elif 28 <= Dice_roll <= 28:
-            result.append("Trident")
-        elif 29 <= Dice_roll <= 29:
-            result.append("War pick")
-        elif 30 <= Dice_roll <= 30:
-            result.append("Warhammer")
-        elif 31 <= Dice_roll <= 31:
-            result.append("Whip")
-        elif 32 <= Dice_roll <= 32:
-            result.append("Whip")
-        elif 33 <= Dice_roll <= 33:
-            result.append("Blowgun")
-        elif 34 <= Dice_roll <= 34:
-            result.append("Hand crossbow")
-        elif 35 <= Dice_roll <= 35:
-            result.append("Heavy crossbow")
-        elif 36 <= Dice_roll <= 36:
-            result.append("Longbow")
-        elif 37 <= Dice_roll <= 37:
-            result.append("Net")
-        else:
-            result.append("Dice roll Exceeded 37")
+        result.append(choice(weapons)+" "+choice(modifier))
     return result
 def Random_Magic_Armor(Number_of_Items=1):
     result = []
@@ -1723,7 +1649,7 @@ if __name__ == "__main__":
 
     # print(Random_Gemstones_10GP(Xd10()))
     # print(Random_Art_Objects_25GP(4))
-    print(Random_Weapon(Xd4(6)))
+    print(Random_Weapon(3))
     # print(Cantrip_Spell_Scroll(9))
     # print(Level_1_Spell_Scroll(9))
     # print(Level_2_Spell_Scroll(3))
