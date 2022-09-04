@@ -13,55 +13,55 @@ def First_Level(Num=1): # Num = number of spells to pick
     print(first)
 def Second_Level(Num=1): # Num = number of spells to pick
     second = [] # empty list to add selected spells to
-    list = [""]
+    list = ["Aganazzar's Scorcher","Aid","Alter Self","Animal Messenger","Arcane Lock","Augury","Barkskin","Beast Sense","Blindness/Deafness","Blur","Borrowed Knowledge","Branding Smite","Calm Emotions","Cloud of Daggers","Continual Flame","Cordon of Arrows","Darkness","Darkvision","Detect Thoughts","Dragon's Breath","Dust Devil","Earthbind","Enhance Ability","Enlarge/Reduce","Enthrall","Find Steed","Find Traps","Flame Blade","Flaming Sphere","Flock of Familiars","Fortune's Favor","Gentle Repose","Gift of Gab","Gust of Wind","Healing Spirit","Heat Metal","Hold Person","Immovable Object","Invisibility","Jim's Glowing Coin","Kinetic Jaunt","Knock","Lesser Restoration","Levitate","Locate Animals or Plants","Locate Object","Magic Mouth","Magic Weapon","Maximillian's Earthen Grasp","Melf's Acid Arrow","Mind Spike","Mirror Image","Misty Step","Moonbeam","Nathair's Mischief","Nystul's Magic Aura","Pass Without Trace","Phantasmal Force","Prayer of Healing","Protection from Poison","Pyrotechnics","Ray of Enfeeblement","Rime's Binding Ice","Rope Trick","Scorching Ray","See Invisibility","Shadow Blade","Shatter","Silence","Skywrite","Snilloc's Snowball Storm","Spder Climb","Spike Growth","Spiritual Weapon","Suggestion","Summon Beast","Tasha's Mind Whip","Vortext Warp","Warding Bond","Warding Wind","Web","Wither and Bloom","Wristpocket","Zone of Truth"]
     for i in range(Num):
         second.append(choice(list))
     print(second)
 def Third_Level(Num=1): # Num = number of spells to pick
     third = [] # empty list to add selected spells to
-    list = [""]
+    list = ["Animate Dead","Ashardalon's Stride","Aura of Vitality","Beacon of Hope","Bestow Curse","Binding Smite","Blink","Call Lightning","Catnap","Clairvoyance","Conjure Animals","Conjure Barrage","Conjure Lesser Demon","Counterspell","Create Food and Water","Crusader's Mantle","Daylight","Dispel Magic","Elemental Weapon","Enemies Abound","Erupting Earth","Fast Friends","Fear","Feign Death","Fireball","Flame Arrows","Fly","Galder's Tower","Gaseous Form","Glyph of Warding","Haste","Hunger of Hadar","Hypnotic Pattern","Incite Greed","Intellect Fortress","Leomund's Tiny Hut","Life Transference","Lightning Arrow","Lightning Bolt","Magic Circle","Major Image","Mass Healing Word","Meld into Stone","Melf's Minute Meteors","Motivational Speech","Nondetection","Phantom Steed","Plant Growth","Protection from Energy","Pulse Wave","Remove Curse","Revivify","Sending","Sleet Storm","Slow","Speak with Dead","Speak with Plants","Spirit Guardians","Spirit Shroud","Stinking Cloud","Summon Fey","Summon Lesser Deoms","Summon Shadowspawn","Summon Undead","Thunder Step","Tidal Wave","Tiny Servant","Tongues","Vampiric Touch","Wall of Sand","Wall of Water","Water Breathing","Water Walk","Wind Wall"]
     for i in range(Num):
         third.append(choice(list))
     print(third)
 def Fourth_Level(Num=1): # Num = number of spells to pick
     fourth = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         fourth.append(choice(list))
     print(fourth)
 def Fifth_Level(Num=1): # Num = number of spells to pick
     fifth = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         fifth.append(choice(list))
     print(fifth)
 def Sixth_Level(Num=1): # Num = number of spells to pick
     sixth = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         sixth.append(choice(list))
     print(sixth)
 def Seventh_Level(Num=1): # Num = number of spells to pick
     seventh = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         seventh.append(choice(list))
     print(seventh)
 def Eighth_Level(Num=1): # Num = number of spells to pick
     eighth = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         eighth.append(choice(list))
     print(eighth)
 def Ninth_Level(Num=1): # Num = number of spells to pick
     ninth = [] # empty list to add selected spells to
-    list = [""]
+    list = []
     for i in range(Num):
         ninth.append(choice(list))
     print(ninth)
 def All_Spells(Num=1): # Num = number of spells to pick
     all = [] # empty list to add selected spells to
-    list = ["d","D"]
+    list = []
     for i in range(Num):
         all.append(choice(list))
     print(all)
