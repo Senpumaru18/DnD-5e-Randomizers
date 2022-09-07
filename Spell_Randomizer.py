@@ -25,7 +25,7 @@ def Third_Level(Num=1): # Num = number of spells to pick
     print(third)
 def Fourth_Level(Num=1): # Num = number of spells to pick
     fourth = [] # empty list to add selected spells to
-    list = []
+    list = ["Arcane Eye","Aura of Life","Aura of Puritiy","Banishment","Blight","Charm Monster","Compulsion","Confusion","Conjure Minor Elementals","Conjure Woodland Beings","Control Water","Death Ward","Dimension Door","Divination","Dominate Beast","Elemental Bane","Evard's Black Tentacles","Fabricate","Find Greater Steed","Fire Shield","Freedom of Movement","Galder's Speedy Courier","Giant Insect","Grasping Vine","Gravity Sinkhole","Greater Invisibility","Guardian of Faith","Guardian of Nature","Hallucinatory Terrain","Ice Storm","Leomund's Secret Chest","Locate Creature","Mordenkainen's Faithful Hound","Mordenkainen's Private Sanctum","Otiluke's Resilient Sphere","Phanasmal Killer","Polymorph","Raulothim's Pyschic Lance","Shadow of Moil","Sickening Radiance","Staggering Smite","Stone Shape","Stoneskin","Storm Sphere","Summon Aberration","Summon Construct","Summon Elemental","Summon Greater Demon","Bitriolic Sphere","Wall fo Fire","Watery Sphere"]
     for i in range(Num):
         fourth.append(choice(list))
     print(fourth)
