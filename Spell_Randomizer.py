@@ -31,7 +31,7 @@ def Fourth_Level(Num=1): # Num = number of spells to pick
     print(fourth)
 def Fifth_Level(Num=1): # Num = number of spells to pick
     fifth = [] # empty list to add selected spells to
-    list = []
+    list = ["Animate Objects","Antilife Shell","Awaken","Banishing Smite","Bigby's Hand","Circle of Power","Cloudkill","Commune","Commune with Nature","Cone of Cold","Conjure Elemental","Conjure Volley","Contact Other Plane","Contagion","Control Winds","Creation","Danse Macabre","Dawn","Destructive Wave","Dispel Evil and Good","Dominate Person","Dream","Enervation","Far Step","Flame Strike","Geas","Greater Restoration","Hallow","Hold Monster","Holy Weapon","Immolation","Infernal Calling","Insect Plague","Legend Lore","Maelstrom","Mass Cure Wounds","Mislead","Modify Memory","Negative Energy Flood","Passwall","Planar Binding","Raise Dead","Rary's Telepathic Bond","Reincarnate","Scrying","Seeming","Skill Empowerment","Steel Wind Strike","Summon Celestial","Summon Draconic Spirit","Swift Quiver","Synaptic Static","Telekinesis","Teleportation Circle","Temporal Shunt","Transmute Rock","Tree Stride","Wall of Force","Wall of Light","Wall of Stone","Wrath of Nature"]
     for i in range(Num):
         fifth.append(choice(list))
     print(fifth)
