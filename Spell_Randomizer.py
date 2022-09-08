@@ -37,7 +37,7 @@ def Fifth_Level(Num=1): # Num = number of spells to pick
     print(fifth)
 def Sixth_Level(Num=1): # Num = number of spells to pick
     sixth = [] # empty list to add selected spells to
-    list = []
+    list = ["Arcane Gate","Blade Barrier","Bones of the Earth","Chain Lightning","Circle of Death","Conjure Fey","Contingency","Create Homunculus","Create Undead","Disintegrate","Drawmij's Instant Summons","Druid Grove","Eyebite","Find the Path","Fizban's Platinum Shield","Flesh to Stone","Forbiddance","Globe of Invulnerability","Gravity Fissure","Guards and Wards","Harm","Heal","Heroes' Feast","Investiture of Flame","Investiture of Ice","Investiture of Stone","Investiture of Wind","Magic Jar","Mass Suggestion","Mental Prision","Move Earth","Otiluke's Freezing Sphere","Otto's Irresistible Dance","Planar Ally","Primordial Ward","Programmed Illusion","Scatter","Soul Cage","Summon Fiend","Sunbeam","Tasha's Otherworldly Guise","Tenser's Transformation","Transport via Plants","True Seeing","Wall of Ice","Wall of Thorns","Wind Walk","Word of Recall"]
     for i in range(Num):
         sixth.append(choice(list))
     print(sixth)

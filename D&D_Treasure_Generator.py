@@ -414,7 +414,7 @@ def Level_5_Spell_Scroll(Number_of_Items=1):
     return result
 def Level_6_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Arcane Gate", "Blade Barrier", "Chain Lightning", "Circle of Death", "Conjure Fey", "Contingency", "Create Undead","Disintergrate", "Drawmij's instant Summons (Ritual)", "Eyebite", "Find the Path", "Flesh to Stone","Forbiddance (Ritual)", "Glob of invulnerability", "Guards and Wards", "Harm", "Heal", "Heroes' Feast","Magic Jar", "Mass Suggestion", "Move Earth", "Otiluke's Freezing Sphere", "Otto's Irresistible Dance", "Planar Ally","Programmed Illusion", "Sundbeam", "Transport via Plants", "True Seeing", "Wall of Ice", "Wall of Thorns","Wind Walk", "Word of Recall"]
+    Spell_List = ["Arcane Gate","Blade Barrier","Bones of the Earth","Chain Lightning","Circle of Death","Conjure Fey","Contingency","Create Homunculus","Create Undead","Disintegrate","Drawmij's Instant Summons","Druid Grove","Eyebite","Find the Path","Fizban's Platinum Shield","Flesh to Stone","Forbiddance","Globe of Invulnerability","Gravity Fissure","Guards and Wards","Harm","Heal","Heroes' Feast","Investiture of Flame","Investiture of Ice","Investiture of Stone","Investiture of Wind","Magic Jar","Mass Suggestion","Mental Prision","Move Earth","Otiluke's Freezing Sphere","Otto's Irresistible Dance","Planar Ally","Primordial Ward","Programmed Illusion","Scatter","Soul Cage","Summon Fiend","Sunbeam","Tasha's Otherworldly Guise","Tenser's Transformation","Transport via Plants","True Seeing","Wall of Ice","Wall of Thorns","Wind Walk","Word of Recall"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result
