@@ -420,7 +420,7 @@ def Level_6_Spell_Scroll(Number_of_Items=1):
     return result
 def Level_7_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Conjure Celestial", "Delayed Blast Fireball", "Divine Word", "Etherealness", "Finger of Death", "Fire Storm","Forcecage", "Mirage Arcane", "Mordenkainen's Magnificent Mansion", "Mordenkainen's Sword", "Plane Shift","Prismatic Spray", "Project Image", "Regenerate", "Resurrection", "Reverse Gravity", "Sequester","Simulacrum", "Symbol", "Teleport"]
+    Spell_List = ["Conjure Celestial","Create Magen","Crown of Stars","Delayed Blast Fireball","Divine Word","Draconic Transformation","Dream of the Blue Veil","Etherealness","Finger of Death","Fire Storm","Forcecage","Mirage Arcane","Mordenkainen's Magnificent Mansion","Mordenkainen's Sword","Plane Shift","Power Word: Pain","Prismatic Spray","Project Image","Regenerate","Resurrection","Reverse Gravity","Sequester","Simulacrum","Symbol","Teleport","Temple of the Gods","Tether Essence","Whirlwind"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result

@@ -43,7 +43,7 @@ def Sixth_Level(Num=1): # Num = number of spells to pick
     print(sixth)
 def Seventh_Level(Num=1): # Num = number of spells to pick
     seventh = [] # empty list to add selected spells to
-    list = []
+    list = ["Conjure Celestial","Create Magen","Crown of Stars","Delayed Blast Fireball","Divine Word","Draconic Transformation","Dream of the Blue Veil","Etherealness","Finger of Death","Fire Storm","Forcecage","Mirage Arcane","Mordenkainen's Magnificent Mansion","Mordenkainen's Sword","Plane Shift","Power Word: Pain","Prismatic Spray","Project Image","Regenerate","Resurrection","Reverse Gravity","Sequester","Simulacrum","Symbol","Teleport","Temple of the Gods","Tether Essence","Whirlwind"]
     for i in range(Num):
         seventh.append(choice(list))
     print(seventh)
