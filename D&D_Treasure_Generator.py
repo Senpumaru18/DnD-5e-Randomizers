@@ -426,7 +426,7 @@ def Level_7_Spell_Scroll(Number_of_Items=1):
     return result
 def Level_8_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Animal Shapes", "Antimagic Field", "Antipathy/Sympathy", "Clone", "Control Weather", "Demiplane", "Dominate Monster","Earthquake", "Feeblemind", "Glibness", "Holy Aura", "Incendiary Cloud", "Maze", "Mind Blank", "Power Word Stun","Sunburst", "Telepathy", "Trap the Soul", "Tsunami"]
+    Spell_List = ["Abi-Daizim's Horrid Wilting","Animal Shapes","Antimagic Field","Antipathy/Sympathy","Clone","Control Weather","Dark Star","Demiplane","Dominate Monster","Earthquake","Feeblemind","Glibness","Holy aura","illusory Dragon","Incendiary Cloud","Maddening Darkness","Maze","Mighty Fortress","Mind Blank","Power Word: Stun","Reality Break","Sunburst","Telepathy","Tsunami"]
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result

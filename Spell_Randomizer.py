@@ -49,7 +49,7 @@ def Seventh_Level(Num=1): # Num = number of spells to pick
     print(seventh)
 def Eighth_Level(Num=1): # Num = number of spells to pick
     eighth = [] # empty list to add selected spells to
-    list = []
+    list = ["Abi-Daizim's Horrid Wilting","Animal Shapes","Antimagic Field","Antipathy/Sympathy","Clone","Control Weather","Dark Star","Demiplane","Dominate Monster","Earthquake","Feeblemind","Glibness","Holy aura","illusory Dragon","Incendiary Cloud","Maddening Darkness","Maze","Mighty Fortress","Mind Blank","Power Word: Stun","Reality Break","Sunburst","Telepathy","Tsunami"]
     for i in range(Num):
         eighth.append(choice(list))
     print(eighth)
