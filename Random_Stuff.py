@@ -1,17 +1,20 @@
-from string import ascii_letters as asc
+from string import ascii_lowercase as asc
+from string import ascii_uppercase as ASC
 
-alphabet = asc + "!@#$%^&*"
+alphabet = asc + "!@#$%" + ASC + "^&* "
 
 def CeaserCipher():
     message = str(input("Enter your message: "))
     shift = int(input("Enter the amount to shift: "))
     shifted = alphabet[shift:] + alphabet[:shift]
-    for x in range(len(alphabet)):
-        coded = ""
+    coded = ""
+    for x in range(len(message)):
         letter = message[x]
-        newLetter = shifted[letter]
-    print(shifted)
-    print(letter)
+        letteridx = alphabet.index(letter)
+        newLetter = shifted[letteridx]
+        coded += newLetter
+    print(coded)
+
 
 
 CeaserCipher()
