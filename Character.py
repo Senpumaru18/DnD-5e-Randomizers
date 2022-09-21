@@ -1,9 +1,10 @@
 def main():
     Arwyn = PlayerStats(15,20,16,10,18,12,'Changling',['Druid', 'Rogue'], [3,3],30)
-    # Arwyn.getClass()
+    
+    Arwyn.getClass()
 
 class PlayerStats:
-    def __init__(self, strength, dexterity, constitution, intellegence, wisdom, charisma, race, Class, classLvl, speed):
+    def __init__(self, strength, dexterity, constitution, intellegence, wisdom, charisma, race, _class, classLvl, speed):
         self.str = strength
         self.dex = dexterity
         self.con = constitution
@@ -11,7 +12,7 @@ class PlayerStats:
         self.wis = wisdom
         self.cha = charisma
         self.race = race
-        self.Class = Class
+        self._class = _class
         self.level = classLvl
         self.speed = speed
 
@@ -230,7 +231,11 @@ class PlayerStats:
     def get_speed(self):
         return self.speed
     def getClass(self):
-        for x in range(0, len(self.Class)):
-            print(f"lvl {self.level[x]} {self.Class[x]}")
+        for x in range(0, len(self._class)):
+            print(f"lvl {self.level[x]} {self._class[x]}")
+
+
+
+
 if __name__ == "__main__":
     main()
