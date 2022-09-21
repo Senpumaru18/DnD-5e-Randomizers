@@ -1,6 +1,6 @@
 def main():
     Arwyn = PlayerStats(15,20,16,10,18,12,'Changling','lvl 3 Rouge, lvl 3 Druid',30)
-    print(Arwyn.AC())
+    print(Arwyn.name())
 
 class PlayerStats:
     def __init__(self, strength, dexterity, constitution, intellegence, wisdom, charisma, race, Class, speed):
@@ -13,7 +13,6 @@ class PlayerStats:
         self.race = race
         self.Class = Class
         self.speed = speed
-        self.name = self
 
     def STR_modifier(self):
         if self.str == 1:
