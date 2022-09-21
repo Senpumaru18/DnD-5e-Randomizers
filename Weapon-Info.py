@@ -3,10 +3,10 @@ import Character # Needed for some weapon properties
 def workspace():
 # Space for all the weapons
     club = meleeWeapon('Club', 10, [1,4], 'bludgeoning', 2, ['light'], 'Simple')
-    dagger = meleeWeapon('Dagger', 200, [1,4], 'piercing', 1, ['finesse', 'light', 'thrown', '20/60'], 'Simple')
+    dagger = meleeWeapon('Dagger', 200, [1,4], 'piercing', 1, ['finesse', 'light', 'thrown'], 'Simple', [20,60])
 
 # Area to call functions
-    print(dagger.getRange)
+    print(dagger.getRange())
     # print(club.getWeight())
 
 
@@ -136,15 +136,14 @@ class rangedWeapon(weapon):
     def getRange(self):
         return self.range
 class meleeWeapon(weapon):
-    def __init__(self, name, cost, damage, dmgType, weight, properties, weaponGrade):
+    def __init__(self, name, cost, damage, dmgType, weight, properties, weaponGrade, _range=0):
         super().__init__(name, cost, damage, dmgType, weight, properties, weaponGrade)
-        for property in self.properties:
-            if property == 'thrown':
-                thrown(properties[property+1])
-            else:
-                pass
+        if _range != 0:
+            self.range = _range
+        else:
+            pass
     def getRange(self):
-        return self.range
+        return f"{self.range[0]}/{self.range[1]}"
 
 
 if __name__ == "__main__":
