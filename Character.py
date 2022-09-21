@@ -1,9 +1,9 @@
 def main():
-    Arwyn = PlayerStats(15,20,16,10,18,12,'Changling','lvl 3 Rouge, lvl 3 Druid',30)
-    print(Arwyn.name())
+    Arwyn = PlayerStats(15,20,16,10,18,12,'Changling',['Druid', 'Rogue'], [3,3],30)
+    # Arwyn.getClass()
 
 class PlayerStats:
-    def __init__(self, strength, dexterity, constitution, intellegence, wisdom, charisma, race, Class, speed):
+    def __init__(self, strength, dexterity, constitution, intellegence, wisdom, charisma, race, Class, classLvl, speed):
         self.str = strength
         self.dex = dexterity
         self.con = constitution
@@ -12,6 +12,7 @@ class PlayerStats:
         self.cha = charisma
         self.race = race
         self.Class = Class
+        self.level = classLvl
         self.speed = speed
 
     def STR_modifier(self):
@@ -228,6 +229,8 @@ class PlayerStats:
         return self.DEX_modifier
     def get_speed(self):
         return self.speed
-
+    def getClass(self):
+        for x in range(0, len(self.Class)):
+            print(f"lvl {self.level[x]} {self.Class[x]}")
 if __name__ == "__main__":
     main()
