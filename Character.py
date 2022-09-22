@@ -1,9 +1,9 @@
 def main():
-    Arwyn = PlayerStats(15,20,16,10,18,12,'Changling',['Druid', 'Rogue'], [3,3],30)
+    Arwyn = playerStats(15,20,16,10,18,12,'Changling',['Druid', 'Rogue'], [3,3],30)
     
-    Arwyn.getClass()
+    print(Arwyn.speed)
 
-class PlayerStats:
+class playerStats:
     def __init__(self, strength, dexterity, constitution, intellegence, wisdom, charisma, race, _class, classLvl, speed):
         self.str = strength
         self.dex = dexterity
@@ -16,7 +16,7 @@ class PlayerStats:
         self.level = classLvl
         self.speed = speed
 
-    def STR_modifier(self):
+    def strModifier(self):  # All xModifier converts the ability score into the corresponing modifier
         if self.str == 1:
             return "-5"
         elif self.str <= 3:
@@ -51,7 +51,7 @@ class PlayerStats:
             return "+10"
         else:
             return "That number is not valid, must be within 1-30"
-    def DEX_modifier(self):
+    def dexModifier(self):
         if self.dex == 1:
             return "-5"
         elif self.dex <= 3:
@@ -86,7 +86,7 @@ class PlayerStats:
             return "+10"
         else:
             return "That number is not valid, must be within 1-30"
-    def CON_modifier(self):
+    def conModifier(self):
         if self.con == 1:
             return "-5"
         elif self.con <= 3:
@@ -121,7 +121,7 @@ class PlayerStats:
             return "+10"
         else:
             return "That number is not valid, must be within 1-30"
-    def INT_modifier(self):
+    def intModifier(self):
         if self.int == 1:
             return "-5"
         elif self.int <= 3:
@@ -156,7 +156,7 @@ class PlayerStats:
             return "+10"
         else:
             return "That number is not valid, must be within 1-30"
-    def WIS_modifier(self):
+    def wisModifier(self):
         if self.wis == 1:
             return "-5"
         elif self.wis <= 3:
@@ -191,7 +191,7 @@ class PlayerStats:
             return "+10"
         else:
             return "That number is not valid, must be within 1-30"
-    def CHA_modifier(self):
+    def chaModifier(self):
         if self.cha == 1:
             return "-5"
         elif self.cha <= 3:
@@ -226,12 +226,10 @@ class PlayerStats:
             return "+10"
         else:
             return "That number is not valid, must be within 1-30"
-    def AC(self):
+    def AC(self):           # Retrieves the info to make the character's Armor Class (AC)
         return self.DEX_modifier
-    def get_speed(self):
-        return self.speed
-    def getClass(self):
-        for x in range(0, len(self._class)):
+    def getClass(self):     # Prints out all the classes and levels of the character
+        for x in range(len(self._class)):
             print(f"lvl {self.level[x]} {self._class[x]}")
 
 
