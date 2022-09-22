@@ -4,6 +4,9 @@ def workspace():
 # Space for all the weapons
     club = meleeWeapon('Club', 10, [1,4], 'bludgeoning', 2, ['light'], 'Simple')
     dagger = meleeWeapon('Dagger', 200, [1,4], 'piercing', 1, ['finesse', 'light', 'thrown'], 'Simple', [20,60])
+    greatClub = meleeWeapon('Great Club', 20, [1,8], 'bludgeoning', 10, ['two_handed'], 'Simple')
+    handaxe = meleeWeapon('Handaxe', 500, [1,6], 'slashing', 2, ['light','thrown'], 'Simple', [20,60])
+    
 
 # Area to call functions
     print(dagger.getRange())
@@ -94,12 +97,11 @@ class property():
     pass
 class thrown(property):
     def __init__(self, _range):
-        self.range = _range
-    
+        self.range = _range  
 class ammunition(property):
     def __init__(self, ammoType):
         self.ammoType = ammoType
-class finnesse(property):
+class finesse(property):
     def STRorDEX(choice, player):
         if choice == "str":
             return player.STR_modifier
@@ -134,7 +136,7 @@ class rangedWeapon(weapon):
         super().__init__(name, cost, damage, dmgType, weight, properties, weaponGrade)
         self.range = _range
     def getRange(self):
-        return self.range
+        return f"{self.range} ft"
 class meleeWeapon(weapon):
     def __init__(self, name, cost, damage, dmgType, weight, properties, weaponGrade, _range=0):
         super().__init__(name, cost, damage, dmgType, weight, properties, weaponGrade)
