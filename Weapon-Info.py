@@ -6,6 +6,39 @@ def workspace():
     dagger = meleeWeapon('Dagger', 200, [1,4], 'piercing', 1, ['finesse', 'light', 'thrown'], 'Simple', [20,60])
     greatClub = meleeWeapon('Great Club', 20, [1,8], 'bludgeoning', 10, ['two_handed'], 'Simple')
     handaxe = meleeWeapon('Handaxe', 500, [1,6], 'slashing', 2, ['light','thrown'], 'Simple', [20,60])
+    javelin = meleeWeapon('Javelijn', 50, [1,6], 'piercing', 2, ['thrown'], 'Simple', [30,120])
+    lightHammer = meleeWeapon()
+    mace = meleeWeapon()
+    quarterstaff = meleeWeapon()
+    sickle = meleeWeapon()
+    spear = meleeWeapon()
+    lightCrossbow = rangedWeapon()
+    dart = rangedWeapon()
+    shrortbow = rangedWeapon()
+    sling = rangedWeapon()
+    battleaxe = meleeWeapon()
+    flail = meleeWeapon()
+    glaive = meleeWeapon()
+    greateaxe = meleeWeapon()
+    greatsword = meleeWeapon()
+    halberd = meleeWeapon()
+    lance = meleeWeapon()
+    longsword = meleeWeapon()
+    maul = meleeWeapon()
+    morningstar = meleeWeapon()
+    pike = meleeWeapon()
+    rapier = meleeWeapon()
+    scimitar = meleeWeapon()
+    shortsword = meleeWeapon()
+    trident = meleeWeapon()
+    warPick = meleeWeapon()
+    warhammer = meleeWeapon()
+    whip = meleeWeapon()
+    blowgun = rangedWeapon()
+    handCrossbow = rangedWeapon()
+    heavyCrossbow = rangedWeapon()
+    longbow = rangedWeapon()
+    net = rangedWeapon()
     
 
 # Area to call functions
@@ -14,6 +47,44 @@ def workspace():
 
 
 # Classes for various things
+class property():
+    pass
+class thrown(property):
+    def __init__(self, _range):
+        self.range = _range  
+class ammunition(property):
+    def __init__(self, ammoType):
+        self.ammoType = ammoType
+class finesse(property):
+    def STRorDEX(choice, player):
+        if choice == "str":
+            return player.STR_modifier
+        elif choice == "dex":
+            return Character.player.DEX_modifier
+class heavy(property):
+    pass
+class light(property):
+    pass
+class loading(property):
+    pass
+class reach(property):
+    pass
+class thrown(property):
+    def __init__(self, _range):
+        self.range = _range
+class two_handed(property):
+    pass
+class versatile(property):
+    def rollVersDmg(self, crit=0):
+        damage = 0
+        if crit == 0:
+            for i in range(self.damage[0]):
+                damage += randint(1, self.damage[1])
+        else:
+            for i in range(self.damage[0]*2):
+                damage += randint(1, self.damage[1])
+        return damage
+
 class weapon:
     def __init__(self, name, cost, damage, dmgType, weight, properties, weaponGrade):
         self.name = name
@@ -92,45 +163,6 @@ class weapon:
             for i in range(self.damage[0]*2):
                 damage += randint(1, self.damage[1])
         return f"{damage} {self.dmgType}"
-
-class property():
-    pass
-class thrown(property):
-    def __init__(self, _range):
-        self.range = _range  
-class ammunition(property):
-    def __init__(self, ammoType):
-        self.ammoType = ammoType
-class finesse(property):
-    def STRorDEX(choice, player):
-        if choice == "str":
-            return player.STR_modifier
-        elif choice == "dex":
-            return Character.player.DEX_modifier
-class heavy(property):
-    pass
-class light(property):
-    pass
-class loading(property):
-    pass
-class reach(property):
-    pass
-class thrown(property):
-    def __init__(self, Range):
-        self.range = Range
-class two_handed(property):
-    pass
-class versatile(property):
-    def rollVersDmg(self, crit=0):
-        damage = 0
-        if crit == 0:
-            for i in range(self.damage[0]):
-                damage += randint(1, self.damage[1])
-        else:
-            for i in range(self.damage[0]*2):
-                damage += randint(1, self.damage[1])
-        return damage
-
 class rangedWeapon(weapon):
     def __init__(self, name, cost, damage, dmgType, weight, properties, weaponGrade, _range):
         super().__init__(name, cost, damage, dmgType, weight, properties, weaponGrade)
