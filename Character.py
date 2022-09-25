@@ -1,5 +1,5 @@
 def main():
-    Arwyn = playerStats('Arwyn',15,20,16,10,18,12,'Changling',['Druid', 'Rogue'], [3,3],30)
+    Arwyn = playerStats('Arwyn',15,20,16,10,18,12,'Changling',['Druid', 'Rogue'], [3,3],30, ['acrobatics', 'arcana', 'deception', 'history', 'medicine'])
     BOB = playerStats('BOB',16,18,20,8,12,20,'Human',['Fighter'],[20],45)
     
     print(Arwyn.allSkills())
@@ -7,7 +7,7 @@ def main():
     
 # DO NOT TOUCH ANYTHING PAST THIS
 class playerStats:
-    def __init__(self, name, strength, dexterity, constitution, intellegence, wisdom, charisma, race, _class, classLvl, speed):
+    def __init__(self, name, strength, dexterity, constitution, intellegence, wisdom, charisma, race, _class, classLvl, speed, proficiency):
         self.name = name
         self.str = strength
         self.dex = dexterity
@@ -19,6 +19,7 @@ class playerStats:
         self._class = _class
         self.level = classLvl
         self.speed = speed
+        self.prof = proficiency
 
     def strModifier(self):  # All xModifier converts the ability score into the corresponing modifier
         if self.str == 1:
@@ -267,126 +268,126 @@ class playerStats:
             return 6
         else:
             return "exceeded current paramiters"
-    def acrobatics(self, proficiency=0):
+    def acrobatics(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.dexModifier()
         else:
             skill += self.dexModifier()
         return skill
-    def animalHandling(self, proficiency=0):
+    def animalHandling(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.wisModifier()
         else:
             skill += self.wisModifier()
         return skill
-    def arcana(self, proficiency=0):
+    def arcana(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.intModifier()
         else:
             skill += self.intModifier()
         return skill
-    def athletics(self, proficiency=0):
+    def athletics(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.strModifier()
         else:
             skill += self.strModifier()
         return skill
-    def deception(self, proficiency=0):
+    def deception(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.chaModifier()
         else:
             skill += self.chaModifier()
         return skill
-    def history(self, proficiency=0):
+    def history(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.intModifier()
         else:
             skill += self.intModifier()
         return skill
-    def insight(self, proficiency=0):
+    def insight(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.wisModifier()
         else:
             skill += self.wisModifier()
         return skill
-    def intimidation(self, proficiency=0):
+    def intimidation(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.chaModifier()
         else:
             skill += self.chaModifier()
         return skill
-    def investigation(self, proficiency=0):
+    def investigation(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.intModifier()
         else:
             skill += self.intModifier()
         return skill
-    def medicine(self, proficiency=0):
+    def medicine(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.wisModifier()
         else:
             skill += self.wisModifier()
         return skill
-    def nature(self, proficiency=0):
+    def nature(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.intModifier()
         else:
             skill += self.intModifier()
         return skill
-    def perception(self, proficiency=0):
+    def perception(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.wisModifier()
         else:
             skill += self.wisModifier()
         return skill
-    def performance(self, proficiency=0):
+    def performance(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.chaModifier()
         else:
             skill += self.chaModifier()
         return skill
-    def persuasion(self, proficiency=0):
+    def persuasion(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.chaModifier()
         else:
             skill += self.chaModifier()
         return skill
-    def religion(self, proficiency=0):
+    def religion(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.intModifier()
         else:
             skill += self.intModifier()
         return skill
-    def sleightOfHand(self, proficiency=0):
+    def sleightOfHand(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.dexModifier()
         else:
             skill += self.dexModifier()
         return skill
-    def stealth(self, proficiency=0):
+    def stealth(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.dexModifier()
         else:
             skill += self.dexModifier()
         return skill
-    def survival(self, proficiency=0):
+    def survival(self):
         skill = 0
         if proficiency != 0:
             skill += self.profBonus() + self.wisModifier()
