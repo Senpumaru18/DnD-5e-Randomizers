@@ -1,8 +1,8 @@
 def main():
-    Arwyn = playerStats('Arwyn',15,20,16,10,18,12,'Changling',['Druid', 'Rogue'], [3,3],30, ['acrobatics', 'arcana', 'deception', 'history', 'medicine'])
-    BOB = playerStats('BOB',16,18,20,8,12,20,'Human',['Fighter'],[20],45)
+    Arwyn = playerStats('Arwyn',15,20,16,10,18,12,'Changling',['Druid','Rogue'], [3,3],30, ['acrobatics', 'arcana', 'deception', 'history', 'medicine'])
+    BOB = playerStats('BOB',16,18,20,8,12,20,'Human',['Fighter'],[20],45,['athletics','animal handling'])
     
-    print(Arwyn.allSkills())
+    print(Arwyn.functions())
     print(BOB.allSkills())
     
 # DO NOT TOUCH ANYTHING PAST THIS
@@ -20,7 +20,33 @@ class playerStats:
         self.level = classLvl
         self.speed = speed
         self.prof = proficiency
-
+    def savingProf(self):
+        saves = []
+        if self._class[0] == 'Barbarian':
+            saves += 'strength', 'constitution'
+        elif self._class[0] == 'Bard':
+            saves += 'dexterity','charisma'
+        elif self._class[0] == 'Cleric':
+            saves += 'wisdom','charisma'
+        elif self._class[0] == 'Druid':
+            saves += 'intelegence','wisdom'
+        elif self._class[0] == 'Fighter':
+            saves += 'strength','constitution'
+        elif self._class[0] == 'Monk':
+            saves += 'strength','dexterity'
+        elif self._class[0] == 'Paladin':
+            saves += 'wisdom','charisma'
+        elif self._class[0] == 'Ranger':
+            saves += 'strength','dexterity'
+        elif self._class[0] == 'Rogue':
+            saves += 'dexterity','intelegence'
+        elif self._class[0] == 'Sorcerer':
+            saves += 'constitution','charisma'
+        elif self._class[0] == 'Warlcok':
+            saves += 'wisdom','charisma'
+        elif self._class[0] == 'Wizard':
+            saves += 'intelegence','wisdom'
+        return saves
     def strModifier(self):  # All xModifier converts the ability score into the corresponing modifier
         if self.str == 1:
             return -5
@@ -270,134 +296,330 @@ class playerStats:
             return "exceeded current paramiters"
     def acrobatics(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.dexModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'acrobatics':
+                skill += self.profBonus() + self.dexModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.dexModifier()
+        else:
+            pass
         return skill
     def animalHandling(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.wisModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'animal handling':
+                skill += self.profBonus() + self.wisModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.wisModifier()
+        else:
+            pass
         return skill
     def arcana(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.intModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'arcana':
+                skill += self.profBonus() + self.intModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.intModifier()
+        else:
+            pass
         return skill
     def athletics(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.strModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'athletics':
+                skill += self.profBonus() + self.strModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.strModifier()
+        else:
+            pass
         return skill
     def deception(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.chaModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'deception':
+                skill += self.profBonus() + self.chaModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.chaModifier()
+        else:
+            pass
         return skill
     def history(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.intModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'history':
+                skill += self.profBonus() + self.intModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.intModifier()
+        else:
+            pass
         return skill
     def insight(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.wisModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'insight':
+                skill += self.profBonus() + self.wisModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.wisModifier()
+        else:
+            pass
         return skill
     def intimidation(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.chaModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'intimidation':
+                skill += self.profBonus() + self.chaModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.chaModifier()
+        else:
+            pass
         return skill
     def investigation(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.intModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'investigation':
+                skill += self.profBonus() + self.intModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.intModifier()
+        else:
+            pass
         return skill
     def medicine(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.wisModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'medicine':
+                skill += self.profBonus() + self.wisModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.wisModifier()
+        else:
+            pass
         return skill
     def nature(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.intModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'nature':
+                skill += self.profBonus() + self.intModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.intModifier()
+        else:
+            pass
         return skill
     def perception(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.wisModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'perception':
+                skill += self.profBonus() + self.wisModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.wisModifier()
+        else:
+            pass
         return skill
     def performance(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.chaModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'performance':
+                skill += self.profBonus() + self.chaModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.chaModifier()
+        else:
+            pass
         return skill
     def persuasion(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.chaModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'persuasion':
+                skill += self.profBonus() + self.chaModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.chaModifier()
+        else:
+            pass
         return skill
     def religion(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.intModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'religion':
+                skill += self.profBonus() + self.intModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.intModifier()
+        else:
+            pass
         return skill
     def sleightOfHand(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.dexModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'sleight of hand':
+                skill += self.profBonus() + self.dexModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.dexModifier()
+        else:
+            pass
         return skill
     def stealth(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.dexModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'stealth':
+                skill += self.profBonus() + self.dexModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.dexModifier()
+        else:
+            pass
         return skill
     def survival(self):
         skill = 0
-        if proficiency != 0:
-            skill += self.profBonus() + self.wisModifier()
-        else:
+        for prof in self.prof:
+            if prof == 'survival':
+                skill += self.profBonus() + self.wisModifier()
+                break
+            else:
+                pass
+        if skill == 0:
             skill += self.wisModifier()
+        else:
+            pass
         return skill
     def allSkills(self):
-        return self.acrobatics(),self.animalHandling(),self.arcana(),self.athletics(),self.deception(),self.history(),self.insight(),self.intimidation(),self.investigation(),self.medicine(),self.nature(),self.perception(),self.performance(),self.persuasion(),self.religion(),self.sleightOfHand(),self.stealth(),self.survival()
-    
+        return f"{self.name}'s ability checks:\n--------------------\nacrobatics: {self.acrobatics()}\nanimal handling: {self.animalHandling()}\narcana: {self.arcana()}\nathletics: {self.athletics()}\ndeception: {self.deception()}\nhistory: {self.history()}\ninsight: {self.insight()}\nintimidation: {self.intimidation()}\ninvestigation: {self.investigation()}\nmedicin: {self.medicine()}\nnature: {self.nature()}\nperception: {self.perception()}\nperformance: {self.performance()}\npersuasion: {self.persuasion()}\nreligion: {self.religion()}\nsleight of hand: {self.sleightOfHand()}\nstealth: {self.stealth()}\nsurvival: {self.survival()}\n"
+    def strSave(self):
+        saves = self.savingProf()
+        saveMod = 0
+        for save in saves:
+            if save == 'strength':
+                saveMod += self.profBonus() + self.strModifier()
+                break
+            else:
+                pass
+        if saveMod == 0:
+            saveMod += self.strModifier()
+        else:
+            pass
+        return saveMod
+    def dexSave(self):
+        saves = self.savingProf()
+        saveMod = 0
+        for save in saves:
+            if save == 'dexterity':
+                saveMod += self.profBonus() + self.dexModifier()
+                break
+            else:
+                pass
+        if saveMod == 0:
+            saveMod += self.dexModifier()
+        else:
+            pass
+        return saveMod
+    def conSave(self):
+        saves = self.savingProf()
+        saveMod = 0
+        for save in saves:
+            if save == 'constitution':
+                saveMod += self.profBonus() + self.conModifier()
+                break
+            else:
+                pass
+        if saveMod == 0:
+            saveMod += self.conModifier()
+        else:
+            pass
+        return saveMod
+    def intSave(self):
+        saves = self.savingProf()
+        saveMod = 0
+        for save in saves:
+            if save == 'intelegence':
+                saveMod += self.profBonus() + self.intModifier()
+                break
+            else:
+                pass
+        if saveMod == 0:
+            saveMod += self.intModifier()
+        else:
+            pass
+        return saveMod
+    def wisSave(self):
+        saves = self.savingProf()
+        saveMod = 0
+        for save in saves:
+            if save == 'wisdom':
+                saveMod += self.profBonus() + self.wisModifier()
+                break
+            else:
+                pass
+        if saveMod == 0:
+            saveMod += self.wisModifier()
+        else:
+            pass
+        return saveMod
+    def chaSave(self):
+        saves = self.savingProf()
+        saveMod = 0
+        for save in saves:
+            if save == 'charisma':
+                saveMod += self.profBonus() + self.chaModifier()
+                break
+            else:
+                pass
+        if saveMod == 0:
+            saveMod += self.chaModifier()
+        else:
+            pass
+        return saveMod
+    def allSaves(self):
+        return f"{self.name}'s ability checks:\n--------------------\nstrenght: {self.strSave()}\ndexterity: {self.dexSave()}\nconstitution: {self.conSave()}\nintelegence: {self.intSave()}\nwisdom: {self.wisSave()}\ncharisma: {self.chaSave()}\n"
 
+
+    def functions(self):
+        return f"Here's a list of all the functions (they are case sensitive) you can call and what they will return\n---------------------------\nsavingProf() = saving throws you have proficiency in\nstrModifier() = your strength modifier\ndexModifier() = your dexterity modifier\nconModifier() = your constitution modifier\nintModifier() = your intelegence modifier\nwisModifier() = your wisdom modifier\nchaModifier() = your charisma modifier\nAC() = your armor class\ngetClass() = your classes and how many levels you have in each\nproficiencyBonus() = your current proficiency bonus\nacrobatics() = your modifier for acrobatics\nanimalHandling() = your modifier for animal handling\narcana() = your modifier for arcana\nathletics() = your modifier for athletics\ndeception() = your modifier for deception\nhistory() = your modifier for history\ninsight() = your modifier for insight\nintimidation() = your modifier for intimidation\ninvestigation() = your modifier for investigation\nmedicine() = your modifier for medicine\nnature() = your modifier for nature\nperception() = your modifier for perception\nperformance() = your modifier for performance\npersuasion() = your modifier for persuasion\nreligion() = your modifier for religion\nsleightOfHand() = your modifier for sleight of hand\nstealth() = your modifier for stealth\nsurvival() = your modifier for survival\nallSkills() = your modifier for all skill checks\nstrSave() = your modifier for strength saving throws\ndexSave() = your modifier for dexterity saving throws\nconSave() = your modifier for constitution saving throws\nintSave() = your modifier for intelegence saving throws\nwisSave() = your modifier for wisdom saving throws\nchaSave() = your modifier for charisma saving throws\nallSaves() = your modifier for all your saving throws"
 
 if __name__ == "__main__":
     main()
