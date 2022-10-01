@@ -1,5 +1,5 @@
 from random import randint
-import Character # Needed for some weapon properties
+# import Character # Needed for some weapon properties
 def workspace():
 # Space for all the weapons
     club = meleeWeapon('Club', 10, [1,4], 'bludgeoning', 2, ['light'], 'Simple')
@@ -60,7 +60,7 @@ class finesse(property):
         if choice == "str":
             return player.STR_modifier
         elif choice == "dex":
-            return Character.player.DEX_modifier
+            return player.DEX_modifier
 class heavy(property):
     pass
 class light(property):
