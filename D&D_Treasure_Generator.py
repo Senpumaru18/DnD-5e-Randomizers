@@ -432,7 +432,7 @@ def Level_8_Spell_Scroll(Number_of_Items=1):
     return result
 def Level_9_Spell_Scroll(Number_of_Items=1):
     result = []
-    Spell_List = ["Astral Projection", "Foresight", "Gate", "Imprisonment", "Mass Heal", "Meteor Swarm", "Power Word Heal","Power Word Kill", "Prismatic Wall", "Shapechange", "Storm of Vengance", "Time Stop", "True Polymorph","True Resurrection", "Weird", "Wish"]
+    Spell_List = ['Astral Projection','Blade of Disaster','Foresight','Gate','Imporisonment','Invulnerability','Mass Heal','Mass Polymorph','Meteor Swarm','Power Word: Heal','Power Word: Kill','Prismatic Wall','Psychic Scream','Ravenous Void','Shapechange','Storm of Vengeance','Time Ravage','Time Stop','True Polymorph','True Resurrection','Weird','Wish']
     for i in range(Number_of_Items):
         result.append(choice(Spell_List))
     return result
