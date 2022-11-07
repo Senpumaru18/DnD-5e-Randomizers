@@ -1647,9 +1647,9 @@ def Treasure_Hoard_CR_17_Up(Number_of_Items=1):
 # EVERYTHING SHOULD BE SET TO RUN ONCE IF YOU DO NOT ENTER A VALUE
 if __name__ == "__main__":
 
-    print(Random_Gemstones_100GP(2))
+    print(Random_Gemstones_10GP(16))
     # print(Random_Art_Objects_25GP(4))
-    # print(Random_Weapon(3))
+    # print(Random_Weapon(30))
     # print(Cantrip_Spell_Scroll(9))
     # print(Level_1_Spell_Scroll(9))
     # print(Level_2_Spell_Scroll(3))
@@ -1668,11 +1668,11 @@ if __name__ == "__main__":
     # print(Magic_Item_Table_B())
     # print(Magic_Item_Table_C(Xd8(3)))
     # print(Magic_Item_Table_D(Xd8(3)))
-    # print(Magic_Item_Table_E())
+    # print(Magic_Item_Table_E(5))
     # print(Magic_Item_Table_F())
     # print(Magic_Item_Table_G(5))
     # print(Magic_Item_Table_H(5))
-    # print(Magic_Item_Table_I(5))
+    # print(Magic_Item_Table_I(15))
     # print(Treasure_Hoard_CR_0_t0_4())
     # print(Treasure_Hoard_CR_5_to_10())
     # print(Treasure_Hoard_CR_11_to_16())
