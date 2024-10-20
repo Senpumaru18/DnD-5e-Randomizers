@@ -49,7 +49,7 @@ def Seventh_Level(Num=1): # Num = number of spells to pick
     print(f"Seventh level: {seventh}")
 def Eighth_Level(Num=1): # Num = number of spells to pick
     eighth = [] # empty list to add selected spells to
-    list = ["Abi-Daizim's Horrid Wilting","Animal Shapes","Antimagic Field","Antipathy/Sympathy","Clone","Control Weather","Dark Star","Demiplane","Dominate Monster","Earthquake","Feeblemind","Glibness","Holy aura","illusory Dragon","Incendiary Cloud","Maddening Darkness","Maze","Mighty Fortress","Mind Blank","Power Word: Stun","Reality Break","Sunburst","Telepathy","Tsunami"]
+    list = ["Abi-Daizim's Horrid Wilting","Animal Shapes","Antimagic Field","Antipathy/Sympathy","Clone","Control Weather","Dark Star","Demiplane","Dominate Monster","Earthquake","Feeblemind"," ","Holy aura","illusory Dragon","Incendiary Cloud","Maddening Darkness","Maze","Mighty Fortress","Mind Blank","Power Word: Stun","Reality Break","Sunburst","Telepathy","Tsunami"]
     for i in range(Num):
         eighth.append(choice(list))
     print(f"Eighth level: {eighth}")
@@ -68,13 +68,13 @@ def All_Spells(Num=1): # Num = number of spells to pick
 
 if __name__ == "__main__":
     # Cantrips(20)
-    # First_Level(16)
-    # Second_Level(12)
-    # Third_Level(8)
-    Fourth_Level(2)
+    First_Level(16)
+    Second_Level(12)
+    Third_Level(8)
+    # Fourth_Level(2)
     # Fifth_Level(2)
     # Sixth_Level()
     # Seventh_Level()
     # Eighth_Level()
     # Ninth_Level()
-    # All_Spells()
+    All_Spells(2)
