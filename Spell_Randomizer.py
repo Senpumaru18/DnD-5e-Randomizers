@@ -68,10 +68,10 @@ def All_Spells(Num=1): # Num = number of spells to pick
 
 if __name__ == "__main__":
     # Cantrips(20)
-    # First_Level(16)
-    # Second_Level(12)
-    # Third_Level(8)
-    Fourth_Level(2)
+    First_Level(10)
+    Second_Level(10)
+    Third_Level(6)
+    # Fourth_Level(2)
     # Fifth_Level(2)
     # Sixth_Level()
     # Seventh_Level()
